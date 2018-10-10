@@ -1,0 +1,10 @@
+{
+    "steps":[
+        {"action":"tapByText","text":"${coin}","step_definition":"2.2 Click on Coin"},
+        {"action":"waitForElementExist","interface":"Portfolio/CoinToken.json","element":"imgExpand","step_definition":"2.2 Wait for expand button"},
+        {"action":"tap","interface":"Portfolio/CoinToken.json","element":"imgExpand","step_definition":"2.1 Click on expand button"},
+        {"action":"waitForTextExist","text":"${accountName}","step_definition":"2.2 Wait for Account name exist"},
+        {"action":"tapByText","text":"${accountName}","step_definition":"2.2 Click on Account name"},
+        {"action":"waitForTextExist","text":"${accountName}","step_definition":"2.2 Wait for Account name exist"}
+    ]
+}

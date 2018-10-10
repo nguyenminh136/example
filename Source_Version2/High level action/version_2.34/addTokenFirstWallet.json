@@ -1,0 +1,29 @@
+{
+    "steps":[
+        {"action":"tap","interface":"Portfolio/DashBoardScreen.json","element":"btnAddCoin_2_34","step_definition":"3 Click on Add Coin button"},
+        {"action":"waitForElementExist","interface":"CommonElements.json","element":"btnAgree","step_definition":"4 Wait for Agree button"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnAgree","step_definition":"5 Click on Agree button"},
+        {"action":"waitForElementExist","interface":"Portfolio/DashBoardScreen.json","element":"btnUpdateCoinsList","step_definition":"6 Wait for Update coins list button"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"21 Wait for screen loading completely"},
+        {"action":"tap","interface":"Portfolio/DashBoardScreen.json","element":"txtTokens","step_definition":"7 Click on Tokens tab"},
+        {"action":"waitForElementExist","interface":"CommonElements.json","element":"btnAgree","step_definition":"4 Wait for Agree button"},
+        {"action":"tap","interface":"CommonElements.json","element":"btnAgree","step_definition":"5 Click on Agree button"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"21 Wait for screen loading completely"},
+        {"action":"waitForElementExist","interface":"Portfolio/DashBoardScreen.json","element":"btnUpdateTokensList","step_definition":"8 Wait for Update tokens list button"},
+        {"action":"waitForElementExist","interface":"Portfolio/DashBoardScreen.json","element":"txtTopToken","step_definition":"9 Wait for Top token list"},
+        {"action":"tap","interface":"Portfolio/DashBoardScreen.json","element":"txbSearchToken_2_34","step_definition":"10 Click on Search token textbox"},
+        {"action":"waitForElementNotExist","interface":"Portfolio/DashBoardScreen.json","element":"txtTopToken","step_definition":"11.1 Wait for Top token list not exist"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"11.2 Wait for screen loading completely"},
+        
+        
+        {"action":"type","interface":"Portfolio/DashBoardScreen.json","element":"txbSearchToken","value":"${token}","step_definition":"12 Input Token value"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"13 Wait for Token loading completely"},
+        {"action":"waitForTextExist","text":"${token}","step_definition":"14 Wait for searched token"},
+        {"action":"waitForElementExist","interface":"Portfolio/DashBoardScreen.json","element":"imgSearchedResultIcon","step_definition":"16 Wait for searched token"},
+        {"action":"tapByText","text":"${token}","step_definition":"17 Click searched token"},
+        {"action":"tapByText","text":"${token}","step_definition":"18 Click searched token"},
+        {"action":"tap","interface":"Portfolio/DashBoardScreen.json","element":"btnUpdateTokensList","step_definition":"19 Click on Update tokens list button"},
+        {"action":"waitForTextExist","text":"BALANCE","step_definition":"2.10 Wait for Login successful screen"},
+        {"action":"waitForElementNotExist","interface":"CommonElements.json","element":"imgLoading","step_definition":"21 Wait for screen loading completely"}
+    ]
+}
